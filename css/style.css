@@ -155,7 +155,6 @@ span.web {
 .title {
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 30px;
     width: 696px;
         
     font-weight: 900;
@@ -172,6 +171,7 @@ span.web {
     border-radius: 4px;
     border: none;
     padding: 10px 32px;
+    margin-top: 30px;
         
     font-family: inherit;
     font-weight: 700;
@@ -181,10 +181,8 @@ span.web {
 
     color: var(--second-header-color);
     background: var(--accent-bg-color);
-
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-
     text-align: center;
 }
 .hero-btn:hover,
