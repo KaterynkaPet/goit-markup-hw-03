@@ -198,7 +198,6 @@ span.web {
 .benefits-list {
     display: flex;
     margin: 0;
-    /*margin-top: 44px;*/
     padding: 0;
 
 }
@@ -213,15 +212,20 @@ span.web {
     text-transform: uppercase;
     color: var(--primary-header-color);
 }
-.benefits-text {
+.benefits-li {
     margin: 0;
+    margin-top: 10px;
+    margin-right: 30px;
     padding: 0;
-    padding-top: 10px;
+    
     
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+}
+.benefits-li:last-child{
+    margin-right: 0px;
 }
 
 /*-----------WORK----------*/
@@ -277,16 +281,15 @@ span.web {
     background: var(--primary-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+.team-li:not(:last-child){
     margin-right: 30px;
 }
 .team-list {
     display: flex;
     padding: 0;
     margin: 0;
-    padding-top: 50px;
-}
-.team-li :not(:first-child){
-    margin-left: 0px;
+    margin-top: 50px;
 }
 .team-img {
     display: block;
@@ -295,13 +298,13 @@ span.web {
 .diskription-team {
     display: block;
     padding: 0;
+    padding-top: 30px;
     padding-bottom: 30px;
     margin: 0;
     text-align: center;
 }
 .name-title{
     padding: 0;
-    padding-top: 30px;
     margin: 0;
            
     font-weight: 500;
@@ -314,8 +317,9 @@ span.web {
 }
 .team-text{
     padding: 0;
-    padding-top: 10px;
     margin: 0;
+    margin-top: 10px;
+    
     
     font-size: 16px;
     line-height: 1.19;
@@ -333,7 +337,7 @@ span.web {
     background: var(--footer-bg-color);
 }
 .footer-logo {
-    padding-bottom: 28px;
+    margin-bottom: 28px;
 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -360,14 +364,13 @@ span.web {
 .footer-list .link:focus {
     color: var(--accent-color);
 }
+.footer-li:not(:last-child){
+    margin-bottom: 12px;
+}
 .footer-adress {
-padding-bottom: 12px;
-
     color: var(--second-header-color);
 }
 .footer-mail {
-    padding-bottom: 12px;
-
     color: var(--footer-mail-tel-color);
 }
 .footer-tel {
@@ -423,6 +426,8 @@ padding-bottom: 12px;
     padding-bottom: 20px;
     padding-left: 24px;
     margin: 0;
+
+    border: 1px solid var(--second-border-color);
     
 }
 .portfolio-list {
@@ -440,7 +445,6 @@ padding-bottom: 12px;
     margin-bottom: 30px;
 
     background: var(--second-header-color);
-    border: 1px solid var(--second-border-color);
 }
 .portfolio-flex:nth-child(3n){
     margin-right: 0px;
