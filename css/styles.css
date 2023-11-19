@@ -110,6 +110,7 @@ body {
  .header-container {
     display: flex;
     width: 1158px;
+    align-items: center;
  }
  .navigation {
     display: flex;
@@ -149,9 +150,8 @@ body {
 
  .contacts-link {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
+    color: #434455;
+   
  }
 
  .link:hover,
@@ -159,6 +159,7 @@ body {
     color: #404BBF;
  }
 
+ 
 .contacts {
     font-size: 16px;
     line-height: 1.5;
@@ -270,7 +271,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-bottom: 32px;
+    
     
  }
 /*=========== /TEAM STYLE ==========*/
@@ -296,7 +297,6 @@ body {
     border-top: none;
 }
 .portfolio-subtitle {
-    margin-top: 32px;
     display: flex;
     justify-content: start;
 }
@@ -304,7 +304,6 @@ body {
 .text-portfolio {
     display: flex;
     justify-content: start;
-    margin-bottom: 32px;
 }
 
 /*=========== /PORTFOLIO STYLE ==========*/
