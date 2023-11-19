@@ -19,8 +19,8 @@ body {
  }
  
  h1,h2,h3,h4,h5,h6,p {
-margin-top: 0;
-margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
  }
 
  ul,ol {
@@ -32,6 +32,7 @@ margin-bottom: 0;
 
  img {
     display: block;
+    max-width: 100%;
  }
 
  .logo {
@@ -43,6 +44,7 @@ margin-bottom: 0;
      line-height: 1.17;
      letter-spacing: 0.03em;
      color: #4D5AE5;
+    
  }
  
  .title {
@@ -52,6 +54,7 @@ margin-bottom: 0;
      letter-spacing: 0.02em;
      text-align: center;
      text-transform: capitalize;
+     margin-bottom: 72px;
      color: #2E2F42;
  }
 
@@ -85,8 +88,8 @@ margin-bottom: 0;
  }
 
  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 120px;
+    padding-bottom: 120px;
  }
 
  .container {
@@ -101,8 +104,12 @@ margin-bottom: 0;
 
  /*=========== HEADER STYLE ==========*/
 
+ .page-header {
+    border-bottom: 1px solid #e7e9fc
+ }
  .header-container {
     display: flex;
+    width: 1158px;
  }
  .navigation {
     display: flex;
@@ -111,8 +118,9 @@ margin-bottom: 0;
 
  .menu {
     display: flex;
-    column-gap: 40px;
-    margin-left: 76px;
+ }
+ .menu-item:not(:last-child) {
+    margin-right: 40px;
  }
 
  .contacts-list {
@@ -121,9 +129,13 @@ margin-bottom: 0;
     width: 672px;
     justify-content: flex-end;
  }
- 
  .logo-header {
+    margin-right: 76px
+ }
+ 
+ .logo-header-span {
     color: #2E2F42;
+    
  }
  
  .menu-link {
@@ -181,7 +193,7 @@ margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
 
-    width: 496px;
+    max-width: 496px;
     color: #FFFFFF;
 }
 
@@ -190,7 +202,10 @@ margin-bottom: 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
     margin-top: 48px;
     color: #FFFFFF;
     background-color: #4D5AE5;
@@ -211,12 +226,14 @@ margin-bottom: 0;
 
 .list-advantages {
     display: flex;
-    justify-content: space-between;
-    
 }  
 
 .adventages-card {
-    width: 264px;
+    width: calc((100% - 72px) / 4);
+}
+
+.adventages-card:not(:last-child) {
+    margin-right: 24px;
 }
 
 /*=========== /ADVANTAGES STYLE ==========*/
@@ -229,25 +246,30 @@ margin-bottom: 0;
 
 .list-team {
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px; 
-    margin-top: 72px;
+    gap: 24px;
 }
 
-.card-list {
-    
-    width: calc((100%-72)/4);
+.card-list {    
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
 }
 
+.card-team {
+    padding: 32px 0;
+    display: block;
+}
+
 .team-subtitle {
-    margin-top: 32px;
+    text-align: center;
+    margin-bottom: 8px;
     display: flex;
     justify-content: center;
    
  }
 
  .text-team {
+    text-align: center;
     display: flex;
     justify-content: center;
     margin-bottom: 32px;
@@ -262,13 +284,18 @@ margin-bottom: 0;
  
 .list-portfolio {
     display: flex;
-   
-    column-gap: 24px;
+    gap: 24px;
+    row-gap: 48px;
     flex-wrap: wrap;
     margin-top: 72px;
 }
-.portfolio-list-item{
-    width: calc((100%-72)/4);
+.portfolio-list-item {
+    width: calc((100% - 48px) / 3);
+}
+.card-portfolio {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .portfolio-subtitle {
     margin-top: 32px;
@@ -286,12 +313,16 @@ margin-bottom: 0;
 
 /*=========== FOOTER STYLE ==========*/
 .footer {
-    padding-top: 100px;
+    padding: 100px 0;
     margin-top: 60;
     background-color: #2E2F42;
 }
-
 .logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.logo-footer-span {
     color: #F4F4FD;
 }
 
@@ -300,8 +331,6 @@ margin-bottom: 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
-    margin-top: 16px;
-    padding-bottom: 100px;
     color: #F4F4FD;
 }
 /*=========== /FOOTER STYLE ==========*/
