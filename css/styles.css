@@ -34,6 +34,17 @@ margin-bottom: 0;
     display: block;
  }
 
+ .logo {
+     text-decoration: none;
+     text-transform: uppercase;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 1.17;
+     letter-spacing: 0.03em;
+     color: #4D5AE5;
+ }
+ 
  .title {
      font-weight: 700;
      font-size: 36px;
@@ -41,6 +52,16 @@ margin-bottom: 0;
      letter-spacing: 0.02em;
      text-align: center;
      text-transform: capitalize;
+     color: #2E2F42;
+ }
+
+
+ .subtitle {
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 1.2;
+     letter-spacing: 0.02em;
+     margin-bottom: 8px;
      color: #2E2F42;
  }
 
@@ -62,32 +83,65 @@ margin-bottom: 0;
      clip: rect(0 0 0 0);
      overflow: hidden;
  }
+
+ .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+ }
+
+ .container {
+    width: 1470px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+ }
  
  /*=========== /COMMON STYLE ==========*/
 
  /*=========== HEADER STYLE ==========*/
 
- .logo {
-     text-decoration: none;
-     text-transform: uppercase;
-     font-family: 'Raleway', sans-serif;
-     font-weight: 700;
-     font-size: 18px;
-     line-height: 1.17;
-     letter-spacing: 0.03em;
-     color: #4D5AE5;
+ .header-container {
+    display: flex;
+ }
+ .navigation {
+    display: flex;
+    align-items: center;
  }
 
+ .menu {
+    display: flex;
+    column-gap: 40px;
+    margin-left: 76px;
+ }
+
+ .contacts-list {
+    display: flex;
+    column-gap: 40px;
+    width: 672px;
+    justify-content: flex-end;
+ }
+ 
  .logo-header {
     color: #2E2F42;
  }
  
  .menu-link {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: #2E2F42;
+ }
+
+ .contacts-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
  }
 
  .link:hover,
@@ -108,14 +162,26 @@ margin-bottom: 0;
 
 .solutions {
     background-color: #2E2F42;
+    padding-bottom: 188px;
+    padding-top: 188px;
+   
 }
 
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .main-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 496px;
     color: #FFFFFF;
 }
 
@@ -124,6 +190,8 @@ margin-bottom: 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+
+    margin-top: 48px;
     color: #FFFFFF;
     background-color: #4D5AE5;
     cursor: pointer;
@@ -134,19 +202,21 @@ margin-bottom: 0;
     background-color: #404bbf;
 }
 
-.subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-}
-
 /*=========== /HERO STYLE ==========*/
 
 /*=========== ADVANTAGES STYLE ==========*/
 .advantages {
     background-color: #FFFFFF;
+}
+
+.list-advantages {
+    display: flex;
+    justify-content: space-between;
+    
+}  
+
+.adventages-card {
+    width: 264px;
 }
 
 /*=========== /ADVANTAGES STYLE ==========*/
@@ -157,10 +227,32 @@ margin-bottom: 0;
     background-color: #F4F4FD;
 }
 
+.list-team {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px; 
+    margin-top: 72px;
+}
+
 .card-list {
+    
+    width: calc((100%-72)/4);
     background-color: #FFFFFF;
 }
 
+.team-subtitle {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+   
+ }
+
+ .text-team {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    
+ }
 /*=========== /TEAM STYLE ==========*/
 
 /*=========== PORTFOLIO STYLE ==========*/
@@ -168,10 +260,34 @@ margin-bottom: 0;
     background-color: #FFFFFF;
 }
  
+.list-portfolio {
+    display: flex;
+   
+    column-gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 72px;
+}
+.portfolio-list-item{
+    width: calc((100%-72)/4);
+}
+.portfolio-subtitle {
+    margin-top: 32px;
+    display: flex;
+    justify-content: start;
+}
+
+.text-portfolio {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 32px;
+}
+
 /*=========== /PORTFOLIO STYLE ==========*/
 
 /*=========== FOOTER STYLE ==========*/
 .footer {
+    padding-top: 100px;
+    margin-top: 60;
     background-color: #2E2F42;
 }
 
@@ -183,6 +299,9 @@ margin-bottom: 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
+    margin-top: 16px;
+    padding-bottom: 100px;
     color: #F4F4FD;
 }
 /*=========== /FOOTER STYLE ==========*/
