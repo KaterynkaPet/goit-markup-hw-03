@@ -93,7 +93,7 @@ body {
  }
 
  .container {
-    width: 1470px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -118,9 +118,7 @@ body {
 
  .menu {
     display: flex;
- }
- .menu-item:not(:last-child) {
-    margin-right: 40px;
+    gap: 40px;
  }
 
  .contacts-list {
